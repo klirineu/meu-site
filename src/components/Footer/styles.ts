@@ -21,7 +21,4 @@ export const TextMenu = styled.strong`
   text-transform: uppercase;
   text-align: center;
   color: var(--shape);
-  @media only screen and (max-width: 768px) {
-    margin-right: 30px;
-  }
 `

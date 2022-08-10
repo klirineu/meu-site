@@ -34,19 +34,9 @@ export function Section3() {
             velit vitae nunc sollicitudin hendrerit. Pellentesque commodo nulla
             id nulla ultrices, et sodales quam ornare.
           </Title>
-          <Title>
-            Etiam metus massa, pharetra sed euismod id, rhoncus et tortor. Donec
-            sit amet metus bibendum, aliquet nibh in, interdum lacus. In quis
-            est sed magna consequat imperdiet. Maecenas purus urna, consectetur
-            vel elit sit amet, ultrices rutrum nisi. Proin volutpat nulla et
-            diam condimentum, non auctor nisi tempor. Nulla sed feugiat risus.
-            Donec et posuere magna. Morbi commodo quam purus, et ultrices tellus
-            sollicitudin a. Donec quis massa in dui tempor fringilla. Nulla
-            interdum justo augue, et gravida neque viverra vel.
-          </Title>
         </div>
         <div>
-          <Image src={ImgSection3} alt="sobre mim" />
+          <Image className="image" src={ImgSection3} alt="sobre mim" />
           <Button>
             FAZER ORÇAMENTO <ImageButton src={ImgSetaButton} alt="" />{' '}
           </Button>

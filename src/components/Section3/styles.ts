@@ -3,6 +3,11 @@ import styled from 'styled-components'
 export const Container = styled.section`
   margin-top: 100px;
   padding: 20px;
+  @media screen and (max-width: 768px) {
+    .image {
+      display: none;
+    }
+  }
 `
 
 export const Text = styled.h1`
@@ -15,10 +20,18 @@ export const Text = styled.h1`
 export const Title = styled.p`
   color: var(--blue-light);
   margin-bottom: 25px;
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+    text-align: justify;
+  }
 `
 export const Image = styled.img`
   width: 450px;
   margin-left: 40px;
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+    margin-left: 0;
+  }
 `
 
 export const DivRow = styled.div`
@@ -54,6 +67,7 @@ export const Button = styled.button`
     font-size: 16px;
     width: 300px;
     padding-left: 15px;
+    margin-left: 0;
   }
 `
 

@@ -5,11 +5,21 @@ export const Container = styled.section`
   justify-content: space-around;
   flex-wrap: wrap;
   margin: 30px;
+  .swiper {
+    width: 500px;
+    padding-top: 20px;
+    margin-top: 50px;
+  }
 
   @media (max-width: 767px) {
     justify-content: center;
     align-items: center;
     margin-top: 50px;
+    .swiper {
+      width: 320px;
+      padding-top: 20;
+      margin-top: 50;
+    }
   }
 `
 
@@ -32,7 +42,7 @@ export const Text = styled.p`
 
   @media only screen and (max-width: 768px) {
     text-align: justify;
-    width: 300px;
+    width: 100%;
   }
 `
 
