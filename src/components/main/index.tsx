@@ -20,7 +20,7 @@ import {
   WrapperCard
 } from '../Cards/styles'
 
-export function Main() {
+export function MainComponent() {
   return (
     <ContentMain>
       <WrapperBlocks>
