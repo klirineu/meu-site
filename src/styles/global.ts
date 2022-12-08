@@ -7,7 +7,7 @@ export const GlobalStyle = createGlobalStyle`
       --pink: #CC66F3;
       --pink-light: #F6F1F8;
       --blue-dark-ish: #3565A5;
-      --blue-light: #78B2F0;
+      --blue-light: #4d9df2;
     }
     *,*::before,*::after {
     margin: 0;

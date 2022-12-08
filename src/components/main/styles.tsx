@@ -9,9 +9,14 @@ export const WrapperBlocks = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   padding: 2rem;
   gap: 2rem;
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   @media screen and (max-width: 1023px) {
     display: flex;
     flex-direction: column;

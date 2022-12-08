@@ -1,20 +1,32 @@
 import styled from 'styled-components'
 
 export const WrapperCard = styled.div`
-  width: 100%;
+  /* background-color: red; */
+  width: 300px;
   height: 25rem;
   display: flex;
+  flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  @media screen and (max-width: 1300px) {
+    height: 30rem;
+  }
+  @media screen and (max-width: 600px) {
+    height: 25.5rem;
+  }
 `
-export const HeaderCard = styled.div`
+export const CardHeader = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 50%;
-  position: relative;
+`
+export const CardBody = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `
 export const ContentDescription = styled.div`
   width: 100%;
@@ -24,20 +36,19 @@ export const ContentDescription = styled.div`
   align-items: center;
   gap: 1rem;
   h1 {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    color: var(--blue-dark-ish);
-    text-transform: uppercase;
     font-size: 1rem;
     font-weight: 600;
+    color: var(--blue-dark-ish);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
   }
   p {
-    color: var(--blue-light);
+    font-size: 0.95rem;
     font-weight: 500;
-    font-style: normal;
-    padding: 1rem;
-    /* max-width: 80%; */
+    text-align: center;
+    color: var(--blue-light);
   }
 `
 export const FloatingBubble = styled.div`
@@ -55,6 +66,7 @@ export const FloatingBubble = styled.div`
   align-items: center;
   font-size: 2.5rem;
   color: #fff;
+  position: relative;
 `
 export const LittleBubble = styled.div`
   width: 30px;
@@ -66,8 +78,8 @@ export const LittleBubble = styled.div`
   );
   border-radius: 100%;
   position: absolute;
-  top: 20%;
-  left: 60%;
-  transform: translate(-50%, -50%);
+  top: -10%;
+  left: 50%;
+  transform: translate(90%, -50%);
   border: solid #fff 0.2rem;
 `

@@ -12,9 +12,10 @@ import { BsArrowRightShort, BsCodeSlash } from 'react-icons/bs'
 import { BiChip, BiMobileAlt } from 'react-icons/bi'
 import { RiShoppingBasket2Line } from 'react-icons/ri'
 import {
+  CardBody,
+  CardHeader,
   ContentDescription,
   FloatingBubble,
-  HeaderCard,
   LittleBubble,
   WrapperCard
 } from '../Cards/styles'
@@ -30,6 +31,12 @@ export function Main() {
               <span> programador</span>
             </Typist>
           </DisplayText>
+          <DisplayText>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni nisi
+            perspiciatis ab facere quia culpa. Necessitatibus, eligendi a dicta
+            porro velit, dolorum accusamus, quod eveniet tenetur sit eius
+            ratione quis!
+          </DisplayText>
           <ButtonLink to="#">
             entrar em contato
             <div>
@@ -43,80 +50,84 @@ export function Main() {
       </WrapperBlocks>
       <WrapperBlocks>
         <WrapperCard>
-          <HeaderCard>
+          <CardHeader>
             <FloatingBubble>
               <BsCodeSlash />
+              <LittleBubble />
             </FloatingBubble>
-            <LittleBubble />
-          </HeaderCard>
-          <ContentDescription>
-            <h1>
-              programador <span>&</span> desenvolvedor web
-            </h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Architecto officiis illum nam perferendis omnis et laudantium
-              consequuntur corrupti. Numquam assumenda inventore saepe, ipsa
-              incidunt alias quas eaque distinctio esse repellendus?
-            </p>
-          </ContentDescription>
+          </CardHeader>
+          <CardBody>
+            <ContentDescription>
+              <h1>
+                programador <span>&</span> desenvolvedor web
+              </h1>
+              <p>
+                Atualmente com as pessoas mais conectadas o primeiro contato, na
+                maioria das vezes é feito através do website, portanto tem
+                importante desempenho na visibilidade e crescimento do cliente,
+                sendo essencial para concretizar negócios com clientes reais e
+                potenciais.
+              </p>
+            </ContentDescription>
+          </CardBody>
         </WrapperCard>
         <WrapperCard>
-          <HeaderCard>
+          <CardHeader>
             <FloatingBubble>
               <BiChip />
+              <LittleBubble />
             </FloatingBubble>
-            <LittleBubble />
-          </HeaderCard>
-          <ContentDescription>
-            <h1>
-              desenvolvedor <span>de</span> sistemas
-            </h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Architecto officiis illum nam perferendis omnis et laudantium
-              consequuntur corrupti. Numquam assumenda inventore saepe, ipsa
-              incidunt alias quas eaque distinctio esse repellendus?
-            </p>
-          </ContentDescription>
+          </CardHeader>
+          <CardBody>
+            <ContentDescription>
+              <h1>
+                desenvolvedor <span>de</span> sistema
+              </h1>
+              <p>
+                Desenvolvemos softwares para empresa e startups, robustos e
+                escaláveis, que facilitam upgrades e manutenções e que
+                atravessam décadas em funcionamento.{' '}
+              </p>
+            </ContentDescription>
+          </CardBody>
         </WrapperCard>
         <WrapperCard>
-          <HeaderCard>
+          <CardHeader>
             <FloatingBubble>
               <BiMobileAlt />
+              <LittleBubble />
             </FloatingBubble>
-            <LittleBubble />
-          </HeaderCard>
-          <ContentDescription>
-            <h1>
-              desenvolvedor <span>de</span> aplicação mobile
-            </h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Architecto officiis illum nam perferendis omnis et laudantium
-              consequuntur corrupti. Numquam assumenda inventore saepe, ipsa
-              incidunt alias quas eaque distinctio esse repellendus?
-            </p>
-          </ContentDescription>
+          </CardHeader>
+          <CardBody>
+            <ContentDescription>
+              <h1>
+                desenvolvedor <span>de</span> aplicação mobile
+              </h1>
+              <p>
+                Somos especializados em inovação, totalmente dedicado a
+                desenvolver aplicativos focados no seu usuário.{' '}
+              </p>
+            </ContentDescription>
+          </CardBody>
         </WrapperCard>
         <WrapperCard>
-          <HeaderCard>
+          <CardHeader>
             <FloatingBubble>
               <RiShoppingBasket2Line />
+              <LittleBubble />
             </FloatingBubble>
-            <LittleBubble />
-          </HeaderCard>
-          <ContentDescription>
-            <h1>
-              e-commerce <span>&</span> marktplace
-            </h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Architecto officiis illum nam perferendis omnis et laudantium
-              consequuntur corrupti. Numquam assumenda inventore saepe, ipsa
-              incidunt alias quas eaque distinctio esse repellendus?
-            </p>
-          </ContentDescription>
+          </CardHeader>
+          <CardBody>
+            <ContentDescription>
+              <h1>
+                e-commerce <span>&</span> marktplace
+              </h1>
+              <p>
+                Somos especializados em inovação, totalmente dedicado a
+                desenvolver aplicativos focados no seu usuário.{' '}
+              </p>
+            </ContentDescription>
+          </CardBody>
         </WrapperCard>
       </WrapperBlocks>
     </ContentMain>
