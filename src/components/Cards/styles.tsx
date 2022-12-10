@@ -1,8 +1,29 @@
 import styled from 'styled-components'
 
+export const ContainerCard = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  @media screen and (max-width: 1023px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  animation: go-back 1s;
+  @keyframes go-back {
+    0% {
+      transform: translateX(500px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+`
 export const WrapperCard = styled.div`
   /* background-color: red; */
-  width: 300px;
+  width: 280px;
   height: 25rem;
   display: flex;
   flex-direction: column;
@@ -21,6 +42,7 @@ export const CardHeader = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  /* background-color: red; */
 `
 export const CardBody = styled.div`
   display: flex;
@@ -52,19 +74,19 @@ export const ContentDescription = styled.div`
   }
 `
 export const FloatingBubble = styled.div`
-  width: 125px;
-  height: 125px;
+  width: 100px;
+  height: 100px;
   background: linear-gradient(
     180deg,
     rgba(82, 213, 241, 1) 0%,
     rgba(190, 34, 249, 1) 100%
   );
   border-radius: 100%;
-  border: solid #ebebeb 1.2rem;
+  border: solid #ebebeb 1.1rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   color: #fff;
   position: relative;
 `
