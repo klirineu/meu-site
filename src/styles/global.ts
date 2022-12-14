@@ -8,6 +8,13 @@ export const GlobalStyle = createGlobalStyle`
       --pink-light: #F6F1F8;
       --blue-dark-ish: #3565A5;
       --blue-light: #4d9df2;
+      --color-ish: #fff;
+      --background-ish: linear-gradient(
+        279deg,
+        rgba(53, 101, 165, 1) 0%,
+        #f4f5f6 100%
+      );
+
     }
     *,*::before,*::after {
     margin: 0;

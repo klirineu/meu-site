@@ -11,8 +11,8 @@ export const ContentHeader = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #fff;
-    padding: 2rem;
+    background-color: #ffffff;
+    padding: 0.95rem;
     transition: 0.3s;
   }
   div.navigation {
@@ -122,7 +122,7 @@ export const ContentHeader = styled.div`
   div.navigation input:checked ~ ul.menu {
     right: 0;
   }
-  @media screen and (max-width: 1023px) {
+  @media screen and (max-width: 1280px) {
     div.hamburger,
     input.toggle-menu {
       display: block;
