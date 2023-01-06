@@ -1,107 +1,65 @@
 import styled from 'styled-components'
 
-export const ContainerCard = styled.div`
+export const ContainerCards = styled.section`
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
-  @media screen and (max-width: 1023px) {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-  }
-  animation: go-back 1s;
-  @keyframes go-back {
+  flex-wrap: wrap;
+  gap: 2rem;
+  /* flex-direction: column;
+  -ms-flex-direction: column; */
+`
+export const DisplayCard = styled.div`
+  /* background-color: red; */
+  width: 300px;
+  height: 500px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  animation: myAnim 1s ease 0s 1 normal forwards;
+  @keyframes myAnim {
     0% {
-      transform: translateX(500px);
+      opacity: 0;
+      transform: translateX(250px);
     }
+
     100% {
+      opacity: 1;
       transform: translateX(0);
     }
   }
-`
-export const WrapperCard = styled.div`
-  /* background-color: red; */
-  width: 280px;
-  height: 25rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 1rem;
-  padding: 1rem;
-  @media screen and (max-width: 1300px) {
-    height: 30rem;
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    width: 262px;
   }
-  @media screen and (max-width: 600px) {
-    height: 25.5rem;
-  }
+  /* @media (min-width: 1200px) {
+    width: 260px;
+  } */
 `
-export const CardHeader = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* background-color: red; */
-`
-export const CardBody = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-`
-export const ContentDescription = styled.div`
+export const CardImage = styled.img`
   width: 100%;
+`
+export const ContentCard = styled.div`
+  padding: 0.625rem;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  h1 {
-    font-size: 1rem;
+  -ms-flex-direction: column;
+`
+export const TextCard = styled.span`
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: ${props => props.theme.colors.colorG};
+  text-align: center;
+  &:nth-child(1) {
     font-weight: 600;
-    color: var(--blue-dark-ish);
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    text-transform: uppercase;
+    text-transform: capitalize;
+    font-size: 1rem;
   }
-  p {
-    font-size: 0.95rem;
-    font-weight: 500;
-    text-align: center;
-    color: var(--blue-light);
+  &::first-letter {
+    text-transform: capitalize;
   }
-`
-export const FloatingBubble = styled.div`
-  width: 100px;
-  height: 100px;
-  background: linear-gradient(
-    180deg,
-    rgba(82, 213, 241, 1) 0%,
-    rgba(190, 34, 249, 1) 100%
-  );
-  border-radius: 100%;
-  border: solid #ebebeb 1.1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.5rem;
-  color: #fff;
-  position: relative;
-`
-export const LittleBubble = styled.div`
-  width: 30px;
-  height: 30px;
-  background: linear-gradient(
-    180deg,
-    rgba(82, 213, 241, 1) 0%,
-    rgba(190, 34, 249, 1) 100%
-  );
-  border-radius: 100%;
-  position: absolute;
-  top: -10%;
-  left: 50%;
-  transform: translate(90%, -50%);
-  border: solid #fff 0.2rem;
 `

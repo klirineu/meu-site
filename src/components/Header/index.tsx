@@ -1,23 +1,26 @@
-import { ContentHeader, ContentLogo } from './styles'
-import Logo from '..//..//assets/TechInnovation2.png'
+import { LogoBranding, WrapperHeader } from './styles'
 
-export function Header() {
+import Logo from '..//..//assets/Logo_Tech.png'
+import { ComponentContent } from './../Content/index'
+
+export function ComponentHeader() {
   return (
-    <ContentHeader>
-      <header className="header">
-        <ContentLogo src={Logo} />
+    <WrapperHeader>
+      <div className="header">
+        <LogoBranding src={Logo} />
         <div className="navigation">
           <input type="checkbox" className="toggle-menu" />
           <div className="hamburger" />
           <ul className="menu">
             <a href="#">início</a>
-            <a href="#">sobre mim</a>
-            <a href="#">porcesso de desenvolvimento</a>
+            <a href="">quem somos</a>
             <a href="#">projetos</a>
+            <a href="#">processo de desenvolvimento</a>
             <button>fazer orçamento</button>
           </ul>
         </div>
-      </header>
-    </ContentHeader>
+      </div>
+      <ComponentContent />
+    </WrapperHeader>
   )
 }

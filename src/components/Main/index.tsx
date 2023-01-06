@@ -1,142 +1,117 @@
-import Typist from 'react-typist'
+import {
+  ContentBlock,
+  ContentFlow,
+  DisplayButton,
+  DisplayImage,
+  DisplayText
+} from '../Content/styles'
 
-import DevComputerSvg from '..//..//assets/DevComputer.svg'
-import Building from '..//..//assets/Building.svg'
-import ProjetoOne from '..//..//assets/Projeto_one.svg'
-import TechDev from '..//..//assets/Tech.svg'
+import {
+  AnimationImage,
+  ContainerProjects,
+  ContentMain,
+  MainTitle
+} from './styles'
+import { ComponentCards } from '../Cards'
+import { ComponentWhatsapp } from '../Whatsapp'
 
 import { BsArrowRightShort } from 'react-icons/bs'
-import {
-  ButtonLink,
-  ChildContainer,
-  ContainerMain,
-  ContentImage,
-  DisplayTitle,
-  ParentContainer
-} from './styles'
-import { TimeLine } from '../Timeline'
-import { ContentSubText } from '../Timeline/styles'
-import { TechCards } from '../TechCards'
 
-export function Main() {
+import AboutUs from '..//..//assets/AboutUs.gif'
+import PGProject from '..//..//assets/PlayGround.svg'
+
+export function ComponentMain() {
   return (
-    <ContainerMain>
-      <ParentContainer>
-        <ChildContainer>
-          <div>
-            <h1>
-              <Typist>
-                olá, me chamo <span>luiz vinicius</span> e sou
-                <span> programador</span>
-              </Typist>
-            </h1>
-          </div>
-          <div>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Architecto error libero incidunt quidem, laboriosam molestias quas
-              assumenda tempore accusantium nostrum minima molestiae asperiores
-              distinctio adipisci, alias aut. Dicta, dolorem eligendi!
-            </p>
-          </div>
-          <ButtonLink to="#">
-            <span>entrar em contato</span>
+    <ContentMain>
+      <MainTitle>nossos serviços</MainTitle>
+      <ComponentCards />
+      <MainTitle>quem somos</MainTitle>
+
+      <ContentFlow>
+        <ContentBlock>
+          <DisplayImage src={AboutUs} />
+        </ContentBlock>
+        <ContentBlock>
+          <DisplayText>
+            Somos uma empresa de desenvolvimento de software, preparamos e
+            desenvolvemos nossos projetos de forma organizada e compacta,
+            aplicando o uso de tecnologias visadas pelo mercado. Trazendo
+            qualidade e desempenho para nossos produtos desenvolvidos. Nosso
+            principal objetivo é oferecer um bom atendimento e um ótimo
+            trabalho.
+          </DisplayText>
+          <DisplayButton to="#">
+            <span>fazer orçamento</span>
             <span>
               <BsArrowRightShort />
             </span>
-          </ButtonLink>
-        </ChildContainer>
-        <ChildContainer>
-          <ContentImage src={DevComputerSvg} />
-        </ChildContainer>
-      </ParentContainer>
-      <DisplayTitle>sobre mim</DisplayTitle>
-      <ParentContainer>
-        <ChildContainer>
-          <div></div>
-          <div>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Architecto error libero incidunt quidem, laboriosam molestias quas
-              assumenda tempore accusantium nostrum minima molestiae asperiores
-              distinctio adipisci, alias aut. Dicta, dolorem eligendi!
-            </p>
-            <br />
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Architecto error libero incidunt quidem, laboriosam molestias quas
-              assumenda tempore accusantium nostrum minima molestiae asperiores
-              distinctio adipisci, alias aut. Dicta, dolorem eligendi!
-            </p>
-            <br />
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Architecto error libero incidunt quidem, laboriosam molestias quas
-              assumenda tempore accusantium nostrum minima molestiae asperiores
-              distinctio adipisci, alias aut. Dicta, dolorem eligendi!
-            </p>
+          </DisplayButton>
+        </ContentBlock>
+      </ContentFlow>
+      <MainTitle>projetos</MainTitle>
+
+      <ContainerProjects>
+        <div className="container">
+          <div className="box">
+            <div className="imgBx">
+              <AnimationImage src={PGProject} />
+            </div>
+            <div className="content">
+              <div>
+                <h2>sistema de apostas</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Commodi accusamus molestias quidem iusto.
+                </p>
+              </div>
+            </div>
           </div>
-        </ChildContainer>
-        <ChildContainer>
-          <ContentImage src={Building} />
-          <ButtonLink to="#">
-            <span>entrar em contato</span>
-            <span>
-              <BsArrowRightShort />
-            </span>
-          </ButtonLink>
-        </ChildContainer>
-      </ParentContainer>
-      <ParentContainer>
-        <ChildContainer>
-          <div>
-            <h1>
-              <Typist>
-                tá, mas o que são <span>tecnologias 🤷🏻</span>, e para quê elas
-                <span> servem</span> ?
-              </Typist>
-            </h1>
+          <div className="box">
+            <div className="imgBx">
+              <AnimationImage src={PGProject} />
+            </div>
+            <div className="content">
+              <div>
+                <h2>sistema de apostas</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Commodi accusamus molestias quidem iusto.
+                </p>
+              </div>
+            </div>
           </div>
-          <div>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Architecto error libero incidunt quidem, laboriosam molestias quas
-              assumenda tempore accusantium nostrum minima molestiae asperiores
-              distinctio adipisci, alias aut. Dicta, dolorem eligendi!
-            </p>
+          <div className="box">
+            <div className="imgBx">
+              <AnimationImage src={PGProject} />
+            </div>
+            <div className="content">
+              <div>
+                <h2>sistema de apostas</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Commodi accusamus molestias quidem iusto.
+                </p>
+              </div>
+            </div>
           </div>
-          <div>
-            <TechCards />
+          <div className="box">
+            <div className="imgBx">
+              <AnimationImage src={PGProject} />
+            </div>
+            <div className="content">
+              <div>
+                <h2>sistema de apostas</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Commodi accusamus molestias quidem iusto.
+                </p>
+              </div>
+            </div>
           </div>
-        </ChildContainer>
-        <ChildContainer>
-          <ContentImage src={TechDev} />
-        </ChildContainer>
-      </ParentContainer>
-      <DisplayTitle>processo de desenvolvimento</DisplayTitle>
-      <ParentContainer>
-        <TimeLine />
-      </ParentContainer>
-      <DisplayTitle>projetos</DisplayTitle>
-      <ParentContainer>
-        <ChildContainer>
-          <ContentImage src={ProjetoOne} />
-        </ChildContainer>
-        <ChildContainer>
-          <ContentImage src={ProjetoOne} />
-        </ChildContainer>
-        <ChildContainer>
-          <ContentImage src={ProjetoOne} />
-        </ChildContainer>
-      </ParentContainer>
-      <ContentSubText>
-        <ButtonLink to="#">
-          <span>quero um projeto!</span>
-          <span>
-            <BsArrowRightShort />
-          </span>
-        </ButtonLink>
-      </ContentSubText>
-    </ContainerMain>
+        </div>
+      </ContainerProjects>
+
+      <ComponentWhatsapp />
+    </ContentMain>
   )
 }
